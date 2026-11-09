@@ -1,0 +1,19 @@
+services: 
+    backend:
+      image: yfc-backend:v4
+      build: ./backend
+      container_name: yfc-backend
+      ports:
+      - "5001:5001"
+      env_file: 
+      - ./backend/config/.env
+    
+    frontend:
+      image: yfc-frontend:local
+      build: 
+        context: ./frontend
+        args: 
+          VITE_API_URL: http://localhost:5001
+      container_name: yfc-frontend
+      ports:
+      - "3000:80"
