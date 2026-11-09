@@ -19,8 +19,15 @@ function AppNavbar() {
         className="py-2"
       >
         <Container>
-          <Navbar.Brand as={Link} to="/" className="display-1">
-            YourFirstChoice
+          <Navbar.Brand
+            as={Link}
+            to="/"
+            className="display-1"
+            style={{
+              fontFamily: "'Brush Script MT', 'Comic Sans MS', cursive",
+            }}
+          >
+            yourfirstchoice
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="main-navbar" />
