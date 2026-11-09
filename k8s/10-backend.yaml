@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: akshaymandalik/yfc-backend:2
+          image: akshaymandalik/yfc-backend:4
           imagePullPolicy: IfNotPresent
           ports: 
             - containerPort: 5001
