@@ -11,7 +11,7 @@ The following diagram illustrates the end-to-end CI/CD workflow, from pushing co
 The screenshot below shows a successful Jenkins pipeline execution, with all stages completed successfully.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/fbfd769a-f790-4df2-8cd3-1f05cbc193cf" alt="Successful Jenkins Pipeline Execution" width="75%">
+  <img width="1470" height="835" alt="Screenshot 2026-11-10 at 1 28 45 AM" src="https://github.com/user-attachments/assets/7663fd83-da70-4b0d-a965-f47b2d2a4c5d" />
 </p>
 
 ## Credentials Management
