@@ -37,7 +37,7 @@ pipeline{
         stage('Deploy'){
             steps {
                 sh 'kubectl set image deployment/backend backend=$BACKEND_IMAGE:$TAG -n yfc'
-                sh 'kubectl set image deployment/frontend frontend=$FRONTEND:$TAG -n yfc'
+                sh 'kubectl set image deployment/frontend frontend=$FRONTEND_IMAGE:$TAG -n yfc'
                 sh 'kubectl rollout status deployment/backend -n yfc'
                 sh 'kubectl rollout status deployment/frontend -n yfc'
             }
