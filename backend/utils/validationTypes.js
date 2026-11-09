@@ -2,7 +2,7 @@ import * as z from "zod";
 
 
 export const emailSchema = z.email({
-  message: "Please enter a valid email address",
+  message: "Please enter a valid email addresss",
 });
 
   
